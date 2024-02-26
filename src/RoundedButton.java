@@ -14,7 +14,6 @@ public class RoundedButton extends JButton {
 
         addActionListener(new ActionListener() {
 
-            @Override
             public void actionPerformed(ActionEvent e) {
                 isPressed = !isPressed;
                 repaint();
@@ -24,7 +23,6 @@ public class RoundedButton extends JButton {
 
     }
 
-    @Override
     protected void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
