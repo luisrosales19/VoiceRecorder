@@ -46,4 +46,7 @@ public class RoundedButton extends JButton {
     public Dimension getPreferredSize() {
         return new Dimension(100, 100);
     }
+
+    public void setInnerButtonColor(Color white) {
+    }
 }
